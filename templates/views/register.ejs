@@ -1,0 +1,56 @@
+
+<%- include('../partials/header.ejs') %>
+<%- include('../partials/navbar.ejs')%>
+
+
+<div class="container">   
+        <h2 class="text-center ">Registration Page</h2>
+        <hr>
+        <form method="post">
+            <div class="mb-3">
+              <label for="name" class="form-label"> First Name</label>
+              <input type="text" class="form-control" id="fname" aria-describedby="emailHelp" name="firstName" required="true" >
+            </div>
+            <div class="mb-3">
+              <label for="name" class="form-label"> Last Name</label>
+              <input type="text" class="form-control" id="lname" aria-describedby="emailHelp" name="lastName" required>
+            </div>
+            <div class="mb-3">
+              <label for="mobile" class="form-label">Mobile</label>
+              <input type="tel" value="+91" class="form-control" id="mobile" name="mobile" required> 
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required> 
+            </div>
+            <div class="mb-3">
+              <label for="city" class="form-label">City</label>
+              <input type="text" class="form-control" id="city" name="city" required> 
+            </div>
+            <div class="mb-3">
+              <label for="street" class="form-label">Street</label>
+              <input type="text" class="form-control" id="street" name="street" required> 
+            </div>
+            <div class="mb-3">
+              <label for="state" class="form-label">State</label>
+              <input type="text" class="form-control" id="state" name="state" required> 
+            </div>
+            <div class="mb-3">
+              <label for="country" class="form-label">Country</label>
+              <input type="text" class="form-control" id="country" name="country" required> 
+            </div>
+            <div class="mb-3">
+              <label for="loginID" class="form-label">Login ID</label>
+              <input type="text" class="form-control" id="loginID" name="loginID" required> 
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" name="password" required> 
+            </div>
+            <button type="submit" class="btn btn-primary" id="save">Save</button>
+          </form> 
+    </div>
+</div> 
+ 
+
+<%- include('../partials/footer.ejs') %>
